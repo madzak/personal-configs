@@ -20,6 +20,11 @@ syntax enable
 set autoindent
 set smartindent
 
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set t_Co=256
 colorscheme wombat256mod
 
 nmap <slient> <BS> :nohlsearch<CR>
