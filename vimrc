@@ -24,8 +24,13 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+set pastetoggle=<F2>
+
 set t_Co=256
 colorscheme wombat256mod
+
+" set up syntax highlighting for my e-mail
+au BufRead,BufNewFile .followup,.article,.letter,/tmp/pico*,nn.*,snd.*,/tmp/mutt* :set ft=mail
 
 let twitvim_enable_python = 1
 let twitvim_browser_cmd = '/usr/bin/chromium-browser'
