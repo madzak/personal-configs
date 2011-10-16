@@ -1,0 +1,86 @@
+# This is an automatically generated file.
+# Please see <file:/usr/share/doc/menu/README> for information.
+
+# to use your own menu, copy this to ~/.fluxbox/menu, then edit
+# ~/.fluxbox/init and change the session.menuFile path to ~/.fluxbox/menu
+
+[begin] (Fluxbox)
+
+# Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
+
+   [submenu] (Applications) {}
+      [exec] (Thunar) {/usr/bin/thunar} </usr/share/pixmaps/thunar.xpm>
+      [exec] (1Password) {wine /home/zzajac/.wine/drive_c/Program\ Files/1Password/1Password.exe} <>
+      [exec] (Kindle Reader) {wine /home/zzajac/.wine/drive_c/Program\ Files/Amazon/Kindle/Kindle.exe} <>
+      [exec] (Irssi) { x-terminal-emulator -T "Irssi" -e /usr/bin/irssi} <>
+      [exec] (Pidgin) {/usr/bin/pidgin} </usr/share/pixmaps/pidgin-menu.xpm>
+      [exec] (Skype) {/usr/bin/skype} </usr/share/pixmaps/skype.png>
+      [exec] (Terminal Server Client) {/usr/bin/tsclient -f} </usr/share/pixmaps/tsclient.xpm>
+      [exec] (Chromium) {/usr/bin/chromium-browser} </usr/share/pixmaps/chromium-browser.png>
+      [exec] (LibreOffice Calc) {/usr/bin/libreoffice -calc} </usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm>
+      [exec] (LibreOffice Writer) {/usr/bin/libreoffice -writer} </usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm>
+      [exec] (Python (v2.7\)) { x-terminal-emulator -T "Python (v2.7)" -e /usr/bin/python2.7} </usr/share/pixmaps/python2.7.xpm>
+      [exec] (Spotify) {/usr/bin/spotify} </usr/share/pixmaps/spotify-linux-512x512.png>
+      [exec] (gmix (Gnome 2.0 Mixer\)) {/usr/bin/gnome-volume-control} </usr/share/pixmaps/gnome-mixer.xpm>
+      [exec] (Virtualbox) { virtualbox } </usr/share/pixmaps/virtualbox-ose.xpm>
+      [exec] (VLC media player) {/usr/bin/qvlc} </usr/share/icons/hicolor/32x32/apps/vlc.xpm>
+      [exec] (Shotwell) {/usr/bin/shotwell} <>
+      [exec] (X-terminal) {/usr/bin/x-terminal-emulator} </usr/share/pixmap/xterm-color_32x32.xpm>
+   [end]
+   [submenu] (System) {}
+      [submenu] (Administration) {}
+         [exec] (DSL/PPPoE configuration tool) { x-terminal-emulator -T "DSL/PPPoE configuration tool" -e /usr/sbin/pppoeconf} </usr/share/pixmaps/pppoeconf.xpm>
+         [exec] (Editres) {editres} <>
+         [exec] (Gnome Control Center) {/usr/bin/gnome-control-center} </usr/share/pixmaps/control-center2.xpm>
+         [exec] (GNOME Network Tool) {/usr/bin/gnome-nettool} </usr/share/pixmaps/gnome-nettool.xpm>
+         [exec] (OpenJDK Java 6 Policy Tool) {/usr/lib/jvm/java-6-openjdk/bin/policytool} </usr/share/pixmaps/openjdk-6.xpm>
+         [exec] (pppconfig) { x-terminal-emulator -T "pppconfig" -e su-to-root -p root -c /usr/sbin/pppconfig} <>
+         [exec] (Shares Admin) {/usr/bin/shares-admin} </usr/share/gnome-system-tools/pixmaps/shares.xpm>
+         [exec] (User accounts Admin) {/usr/bin/users-admin} </usr/share/gnome-system-tools/pixmaps/users.xpm>
+         [exec] (Xclipboard) {xclipboard} <>
+         [exec] (Xfontsel) {xfontsel} <>
+         [exec] (Xkill) {xkill} <>
+         [exec] (Xrefresh) {xrefresh} <>
+      [end]
+      [submenu] (Hardware) {}
+         [exec] (Xvidtune) {xvidtune} <>
+      [end]
+      [submenu] (Language Environment) {}
+         [exec] (Input Method Swicher) { x-terminal-emulator -T "Input Method Swicher" -e /usr/bin/im-switch} <>
+      [end]
+      [submenu] (Monitoring) {}
+         [exec] (GNOME Log Viewer) {/usr/bin/gnome-system-log} </usr/share/pixmaps/gnome-system-log.xpm>
+         [exec] (GNOME system monitor) {/usr/bin/gnome-system-monitor} <>
+         [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+         [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+         [exec] (Xconsole) {xconsole -file /dev/xconsole} <>
+         [exec] (Xev) {x-terminal-emulator -e xev} <>
+         [exec] (Xload) {xload} <>
+      [end]
+      [submenu] (Package Management) {}
+         [exec] (Synaptic Package Manager) {/usr/bin/gksu /usr/sbin/synaptic} </usr/share/synaptic/pixmaps/synaptic_32x32.xpm>
+      [end]
+      [submenu] (Security) {}
+         [exec] (Seahorse) {/usr/bin/seahorse} </usr/share/pixmaps/seahorse.xpm>
+      [end]
+   [end]
+   [submenu] (Help) {}
+      [exec] (Info) { x-terminal-emulator -T "Info" -e info} <>
+      [exec] (Xman) {xman} <>
+      [exec] (yelp) {/usr/bin/yelp} <>
+   [end]
+   [submenu] (Window Managers) {}
+      [restart] (FluxBox)  {/usr/bin/startfluxbox}
+   [end]
+
+   [config] (Configuration)
+   [submenu] (Styles) {}
+      [stylesdir] (/usr/share/fluxbox/styles)
+      [stylesdir] (~/.fluxbox/styles)
+   [end]
+   [workspaces] (Workspaces)
+   [reconfig] (Reconfigure)
+   [restart] (Restart)
+   [exit] (Exit)
+
+[end]
