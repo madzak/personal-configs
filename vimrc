@@ -24,10 +24,23 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+set autochdir
+
 set pastetoggle=<F2>
 
-set t_Co=256
-colorscheme wombat256mod
+if has("gui_running")
+    colorscheme wombat
+
+    set guioptions-=m
+    set guioptions-=T
+    set columns=120
+    set lines=60
+
+    set cursorline
+else
+    set t_Co=256
+    colorscheme wombat256mod
+endif
 
 " set up syntax highlighting for my e-mail
 au BufRead,BufNewFile .followup,.article,.letter,/tmp/pico*,nn.*,snd.*,/tmp/mutt* :set ft=mail
@@ -47,3 +60,7 @@ augroup HelpInTabs
         endif
     endfunction
 augroup END
+
+" Space to tab
+:command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
+:command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'

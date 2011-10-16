@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/zzajac/.mozilla'
-let g:netrw_dirhist_2='/home/zzajac/Development/cps/cps/settings'
-let g:netrw_dirhist_3='/home/zzajac/Development/cps/cps'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/zzajac/Development/wesumo/lib/social-account/social/views'
+let g:netrw_dirhist_2='/Users/zzajac/Development/smashed'
+let g:netrw_dirhist_3='/usr/share/applications'
+let g:netrw_dirhist_4='/opt/development/snakefire/snakefire'
