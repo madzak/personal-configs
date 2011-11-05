@@ -27,6 +27,8 @@ set shiftwidth=4
 set autochdir
 
 set pastetoggle=<F2>
+filetype on
+filetype plugin indent on
 
 if has("gui_running")
     colorscheme wombat
