@@ -1,3 +1,5 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
 set ruler
 
 set backspace=indent,eol,start
@@ -15,8 +17,6 @@ set autowrite
 
 set updatecount=10
 
-syntax enable 
-
 set autoindent
 set smartindent
 
@@ -27,6 +27,10 @@ set shiftwidth=4
 set autochdir
 
 set pastetoggle=<F2>
+
+call pathogen#infect()
+
+syntax enable 
 filetype on
 filetype plugin indent on
 
@@ -71,3 +75,4 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd VimEnter * NERDTree

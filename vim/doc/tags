@@ -30,6 +30,7 @@
 :ForwardInfoTwitter	twitvim.txt	/*:ForwardInfoTwitter*
 :ForwardTwitter	twitvim.txt	/*:ForwardTwitter*
 :FriendsTwitter	twitvim.txt	/*:FriendsTwitter*
+:Gist	gist-vim.txt	/*:Gist*
 :Googl	twitvim.txt	/*:Googl*
 :IsGd	twitvim.txt	/*:IsGd*
 :ListInfoTwitter	twitvim.txt	/*:ListInfoTwitter*
@@ -85,6 +86,7 @@
 :UrlBorg	twitvim.txt	/*:UrlBorg*
 :UserTwitter	twitvim.txt	/*:UserTwitter*
 :Zima	twitvim.txt	/*:Zima*
+Gist.vim	gist-vim.txt	/*Gist.vim*
 TwitVim	twitvim.txt	/*TwitVim*
 TwitVim-A-d	twitvim.txt	/*TwitVim-A-d*
 TwitVim-A-g	twitvim.txt	/*TwitVim-A-g*
@@ -152,6 +154,12 @@ TwitVim-tips	twitvim.txt	/*TwitVim-tips*
 TwitVim-unfave	twitvim.txt	/*TwitVim-unfave*
 TwitVim-update-commands	twitvim.txt	/*TwitVim-update-commands*
 TwitVim-utility	twitvim.txt	/*TwitVim-utility*
+gist-vim-install	gist-vim.txt	/*gist-vim-install*
+gist-vim-license	gist-vim.txt	/*gist-vim-license*
+gist-vim-requirements	gist-vim.txt	/*gist-vim-requirements*
+gist-vim-thanks	gist-vim.txt	/*gist-vim-thanks*
+gist-vim-tips	gist-vim.txt	/*gist-vim-tips*
+gist-vim-usage	gist-vim.txt	/*gist-vim-usage*
 hl-twitterLink	twitvim.txt	/*hl-twitterLink*
 hl-twitterReply	twitvim.txt	/*hl-twitterReply*
 hl-twitterTime	twitvim.txt	/*hl-twitterTime*
