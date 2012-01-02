@@ -72,6 +72,7 @@ augroup END
 :command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
