@@ -1,0 +1,24 @@
+set imap_user=zak@thezajacs.org
+set folder=imaps://imap.gmail.com/
+set spoolfile=+INBOX
+
+set imap_check_subscribed
+set mail_check = 120
+set imap_keepalive = 300
+unset imap_passive
+set postponed = +[Gmail]/Drafts
+set header_cache = ~/.mutt/hcache
+
+set my_user=zak@thezajacs.org
+
+set smtp_url=smtps://$my_user@smtp.gmail.com
+set ssl_force_tls = yes
+
+auto_view text/html
+
+macro index,pager A "<save-message>+archive<enter>" "move message to the archive"
+
+set query_command="goobook query '%s'"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
+

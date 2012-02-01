@@ -1,0 +1,16 @@
+term screen-256color
+defscrollback 1000
+vbell off
+startup_message off
+altscreen on
+
+#Use X Scrollbar
+termcapinfo xterm* ti@:te@
+
+#AutoStarts
+screen -t cmd   0 
+screen -t code   1
+screen -t server    2 
+screen -t irssi 3   irssi
+screen -t mutt  4   mutt
+screen -t news  5   newsbeuter
