@@ -11,6 +11,4 @@ termcapinfo xterm* ti@:te@
 screen -t cmd   0 
 screen -t code   1
 screen -t server    2 
-screen -t irssi 3   irssi
-screen -t mutt  4   mutt
-screen -t news  5   newsbeuter
+screen -t app 3   app

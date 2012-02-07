@@ -51,6 +51,8 @@ endif
 " set up syntax highlighting for my e-mail
 au BufRead,BufNewFile .followup,.article,.letter,/tmp/pico*,nn.*,snd.*,/tmp/mutt* :set ft=mail
 
+au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
 let twitvim_enable_python = 1
 let twitvim_browser_cmd = '/usr/bin/chromium-browser'
 
