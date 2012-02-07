@@ -57,6 +57,7 @@ let twitvim_enable_python = 1
 let twitvim_browser_cmd = '/usr/bin/chromium-browser'
 
 nmap <slient> <BS> :nohlsearch<CR>
+noremap <Up> <nop> noremap <Down> <nop> noremap <Left> <nop> noremap <Right> <nop>
 
 augroup HelpInTabs
     au!
