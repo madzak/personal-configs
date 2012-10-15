@@ -16,3 +16,7 @@ source /usr/bin/virtualenvwrapper.sh
 
 # Ruby Path
 export PATH=$PATH:~/.gem/ruby/1.9.1/bin
+
+if [ -n "$DISPLAY" ]; then
+    BROWSER=chromium
+fi
