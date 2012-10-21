@@ -28,6 +28,8 @@ set autochdir
 
 set pastetoggle=<F2>
 
+let g:NERDTreeDirArrows=0
+
 call pathogen#infect()
 
 syntax enable 

@@ -1,17 +1,35 @@
 [begin] (FluxBox)
 	[submenu] (Development)
-		[exec] (OpenJDK Monitoring & Management Console) {jconsole}
-		[exec] (OpenJDK Policy Tool) {policytool}
+		[exec] (IDLE) {idle}
+		[exec] (Python) {xterm -e python}
 		[exec] (Qt Assistant) {assistant}
 		[exec] (Qt Designer) {designer}
 		[exec] (Qt Linguist) {linguist}
 	[end]
 	[submenu] (Editors)
+		[exec] (AA Fire) {xterm -e aafire -driver slang}
+		[exec] (GVim) {gvim}
+		[exec] (Nano) {xterm -e nano}
 		[exec] (Vi) {xterm -e vi}
 		[exec] (Vim) {xterm -e vim}
 	[end]
+	[submenu] (Games)
+		[submenu] (Adventure)
+			[exec] (Sclient) {sclient}
+		[end]
+		[submenu] (Arcade)
+			[exec] (PacMan) {pacman}
+		[end]
+	[end]
+	[submenu] (Graphics)
+		[exec] (Ristretto Image Viewer) {ristretto}
+		[exec] (scanimage) {xterm -e scanimage}
+	[end]
 	[submenu] (Multimedia)
 		[exec] (ALSA mixer) {xterm -e alsamixer}
+		[exec] (Audacious) {audacious}
+		[exec] (MusicBrainz Picard) {picard}
+		[exec] (Pithos) {pithos}
 		[exec] (VLC media player) {vlc}
 	[end]
 	[submenu] (Network)
@@ -26,41 +44,73 @@
 		[exec] (Skype) {skype}
 		[exec] (Talk) {xterm -e talk}
 		[exec] (Telnet) {xterm -e telnet}
-		[exec] (Toggl Desktop) {toggl-desktop}
+		[exec] (Thunderbird) {thunderbird}
+		[exec] (TkVNC) {xterm -e tkvnc}
+		[exec] (Transmission) {transmission-gtk}
 		[exec] (Web Browser) {exo-open --launch WebBrowser}
 	[end]
 	[submenu] (Office)
+		[exec] (Adobe Reader 9) {acroread}
 		[exec] (LibreOffice Impress) {libreoffice}
+		[exec] (PostgreSQL Database) {xterm -e psql template1}
+		[exec] (Wunderlist) {wunderlist}
 	[end]
 	[submenu] (Other)
 		[exec] (QT V4L2 test Utility) {qv4l2}
+		[exec] (Virtual Network Editor) {vmware-netcfg}
+		[exec] (VMware Player) {vmplayer}
+	[end]
+	[submenu] (Science)
+		[exec] (bc) {xterm -e bc}
+		[exec] (dc) {xterm -e dc}
 	[end]
 	[submenu] (Shells)
 		[exec] (GIT) {xterm -e git}
+		[exec] (Oracle VM VirtualBox) {VirtualBox}
 		[exec] (ROX) {rox}
 		[exec] (Terminal) {Terminal}
 		[exec] (UXTerm) {uxterm}
+		[exec] (VMWare) {vmware}
 		[exec] (Xterm) {xterm}
 	[end]
 	[submenu] (System)
 		[submenu] (Settings)
 			[submenu] (GNOME)
 				[exec] (Adobe Flash Player) {flash-player-properties}
+				[exec] (AMD Catalyst Control Center) {amdcccle}
+				[exec] (AMD Catalyst Control Center [Administrative]) {amdxdg-su -c amdcccle}
 			[end]
+			[submenu] (Xfce)
+				[exec] (Notifications) {xfce4-notifyd-config}
+			[end]
+			[exec] (Manage Printing) {xdg-open http://localhost:631/}
 			[exec] (Preferred Applications) {exo-preferred-applications}
+			[exec] (Print Settings) {system-config-printer}
 		[end]
 		[exec] (Avahi Zeroconf Browser) {avahi-discover}
-		[exec] (Batti) {batti}
+		[exec] (pstree) {xterm -e pstree}
+		[exec] (pstree) {xterm -e pstree.x11}
+		[exec] (pstree) {xterm -e /usr/bin/pstree.x11}
+		[exec] (Top) {xterm -e top}
 	[end]
 	[submenu] (Utilities)
+		[exec] (7-Zip FM) {7zFM}
 		[exec] (About Xfce) {xfce4-about}
 		[exec] (File Manager) {exo-open --launch FileManager}
+		[exec] (HP Device Manager) {hp-toolbox}
+		[exec] (Info) {xterm -e info}
 		[exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+		[exec] (Xclock [analog]) {xclock -analog}
+		[exec] (Xclock [digital]) {xclock -digital -update 1}
+		[exec] (Xclock [digital]) {xclock -digital}
+		[exec] (Xrefresh) {xrefresh}
+		[exec] (Xsetroot) {xsetroot}
 	[end]
 	[separator]
 	[submenu] (FluxBox)
 		[workspaces] (Workspaces)
 		[submenu] (Styles)
+			[stylesdir] (/usr/share/fluxbox/styles)
 			[stylesdir] (~/.fluxbox/styles)
 		[end]
 		[config] (Configure)

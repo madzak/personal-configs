@@ -17,6 +17,9 @@ source /usr/bin/virtualenvwrapper.sh
 # Ruby Path
 export PATH=$PATH:~/.gem/ruby/1.9.1/bin
 
+# Heroku Path
+export PATH="/usr/local/heroku/bin:$PATH"
+
 if [ -n "$DISPLAY" ]; then
     BROWSER=chromium
 fi
