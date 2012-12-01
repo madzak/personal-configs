@@ -50,7 +50,7 @@ session.screen0.colPlacementDirection:	TopToBottom
 session.screen0.windowMenu:	/home/zzajac/.fluxbox/windowmenu
 session.screen0.strftimeFormat:	%d %b, %a %I:%M:%S
 session.screen0.windowPlacement:	RowMinOverlapPlacement
-session.screen0.rootCommand:	fbsetbg -l
+session.screen0.rootCommand:	~/.fehbg
 session.screen0.workspaceNames:	Workspace 1,Workspace 2,Workspace 3,Workspace 4,
 session.screen0.opaqueMove:	true
 session.screen0.workspaces:	4

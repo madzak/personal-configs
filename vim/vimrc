@@ -22,6 +22,7 @@ set smartindent
 
 set expandtab
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 
 set autochdir
@@ -76,9 +77,23 @@ augroup HelpInTabs
     endfunction
 augroup END
 
+" pep 8
+let g:pep8_map='<leader>8'
+
+" supertab
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 " Space to tab
 :command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
 :command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
+
+" vimdiff keymappings
+if &diff
+    noremap <space> ]cz.
+    noremap <S-space> [cz.]
+endif
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(

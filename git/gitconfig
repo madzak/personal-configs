@@ -11,3 +11,7 @@
 	color = true
 [color]
 	ui = true
+[merge]
+	tool = vimdiff
+[push]
+	default = tracking

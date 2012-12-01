@@ -19,6 +19,9 @@ skype &
 pidgin &
 x-terminal-emulator &
 dropbox start &
+volumeicon &
+chromium &
+toggl-desktop &
 #gnome-volume-control-applet
 
 # And last but not least we start fluxbox.

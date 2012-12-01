@@ -9,9 +9,11 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 alias vi=vim
+alias python=/usr/bin/python2
 
 # Python VirtualEnv
 export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p python2.7'
 source /usr/bin/virtualenvwrapper.sh
 
 # Ruby Path
