@@ -34,10 +34,9 @@
 	[end]
 	[submenu] (System)
         [exec] (1Password) {wine ~/.wine/drive_c/Program\ Files\ \(x86\)/1Password/1Password.exe}
+        [exec] (KeePass) {keepass}
 		[exec] (Terminal) {Terminal}
 		[exec] (Oracle VM VirtualBox) {VirtualBox}
-		[exec] (VMware Player) {vmplayer}
-		[exec] (VMWare) {vmware}
 		[submenu] (Settings)
             [exec] (AMD Catalyst Control Center [Administrative]) {amdxdg-su -c amdcccle}
             [exec] (Notifications) {xfce4-notifyd-config}

@@ -43,7 +43,7 @@ if has("gui_running")
     set guioptions-=m
     set guioptions-=T
     set columns=120
-    set lines=60
+    set lines=50
 
     set cursorline
 else
