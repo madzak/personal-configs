@@ -1,8 +1,0 @@
-[app] (name=fbrun)
-  [Position]	(CENTER)	{0 0}
-  [Layer]	{2}
-[end]
-[app] (name=chromium) (class=Chromium) (role=browser)
-  [Workspace]	{0}
-  [Close]	{yes}
-[end]
