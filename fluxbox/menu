@@ -35,7 +35,7 @@
 	[submenu] (System)
         [exec] (1Password) {wine ~/.wine/drive_c/Program\ Files\ \(x86\)/1Password/1Password.exe}
         [exec] (KeePass) {keepass}
-		[exec] (Terminal) {Terminal}
+		[exec] (Terminal) {terminal}
 		[exec] (Oracle VM VirtualBox) {VirtualBox}
 		[submenu] (Settings)
             [exec] (AMD Catalyst Control Center [Administrative]) {amdxdg-su -c amdcccle}
