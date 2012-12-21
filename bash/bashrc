@@ -11,6 +11,11 @@ PS1='[\u@\h \W]\$ '
 alias vi=vim
 alias python=/usr/bin/python2
 
+# Display Hotkeys
+alias lock='xscreensaver-command --lock'
+alias thehubd='xrandr --output eDP1 --mode 1600x900 --output HDMI1 --mode 1920x1080 --above eDP1'
+alias normald='xrandr --output HDMI1 --off'
+
 # Python VirtualEnv
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p python2.7'

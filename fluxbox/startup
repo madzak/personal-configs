@@ -21,6 +21,7 @@ terminal &
 ~/.dropbox-dist/dropboxd &
 volumeicon &
 chromium &
+volumeicon &
 toggl-desktop &
 
 # And last but not least we start fluxbox.
