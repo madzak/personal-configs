@@ -19,10 +19,11 @@ skype &
 pidgin &
 terminal &
 ~/.dropbox-dist/dropboxd &
+compton &
 volumeicon &
 chromium &
-volumeicon &
 toggl-desktop &
+launchy &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
