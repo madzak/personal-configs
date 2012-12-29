@@ -17,13 +17,9 @@ xmodmap "/home/zzajac/.Xmodmap"
 
 skype &
 pidgin &
-terminal &
+aterm &
 ~/.dropbox-dist/dropboxd &
-compton &
 volumeicon &
-chromium &
-toggl-desktop &
-launchy &
 hotot &
 
 # And last but not least we start fluxbox.
