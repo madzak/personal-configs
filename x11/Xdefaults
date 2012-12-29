@@ -1,0 +1,5 @@
+aterm*loginShell:true
+aterm*saveLines:32767
+aterm*font:*-*-fixed-medium-r-normal--*-140-*-*-*-*-iso8859-1
+aterm*boldFont:*-*-fixed-bold-r-normal--*-*-140-*-*-*-*-iso8859-1  
+
