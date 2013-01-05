@@ -1,55 +1,99 @@
 [begin] (FluxBox)
+	[submenu] (Development)
+		[exec] (OpenJDK Monitoring & Management Console) {jconsole}
+		[exec] (OpenJDK Policy Tool) {policytool}
+		[exec] (Qt Assistant) {assistant}
+		[exec] (Qt Designer) {designer}
+		[exec] (Qt Linguist) {linguist}
+	[end]
 	[submenu] (Editors)
 		[exec] (GVim) {gvim}
+		[exec] (Nano) {xterm -e nano}
+		[exec] (Vi) {xterm -e vi}
 		[exec] (Vim) {xterm -e vim}
 	[end]
 	[submenu] (Graphics)
-        [exec] (Gimp) {gimp}
+		[exec] (GNU Image Manipulation Program) {gimp-2.8}
 		[exec] (Ristretto Image Viewer) {ristretto}
-		[exec] (scanimage) {xterm -e scanimage}
 	[end]
 	[submenu] (Multimedia)
 		[exec] (ALSA mixer) {xterm -e alsamixer}
 		[exec] (Audacious) {audacious}
 		[exec] (MusicBrainz Picard) {picard}
-		[exec] (Spotify) {wine ~/.wine/drive_c/users/zzajac/Application\ Data/Spotify/spotify.exe}
+		[exec] (Sound Converter) {soundconverter}
+		[exec] (Spotify) {spotify}
 		[exec] (VLC media player) {vlc}
 	[end]
 	[submenu] (Network)
+		[exec] (Avahi SSH Server Browser) {bssh}
+		[exec] (Avahi VNC Server Browser) {bvnc}
 		[exec] (Chromium) {chromium}
+		[exec] (FireFox) {firefox}
+		[exec] (FTP) {xterm -e ftp}
 		[exec] (Google Music Manager) {google-musicmanager}
+		[exec] (Hotot) {hotot}
+		[exec] (Liferea) {liferea}
+		[exec] (Mail) {xterm -e mail}
+		[exec] (Mail Reader) {exo-open --launch MailReader}
 		[exec] (Pidgin Internet Messenger) {pidgin}
 		[exec] (Skype) {skype}
+		[exec] (Steam) {steam}
+		[exec] (Talk) {xterm -e talk}
+		[exec] (Telnet) {xterm -e telnet}
 		[exec] (Thunderbird) {thunderbird}
-        [exec] (Liferea) {liferea}
 		[exec] (TightVNC Viewer) {vncviewer}
-        [exec] (Adobe Flash Player) {flash-player-properties}
+		[exec] (Toggl Desktop) {toggl-desktop}
+		[exec] (Transmission) {transmission-gtk}
+		[exec] (Web Browser) {exo-open --launch WebBrowser}
 	[end]
 	[submenu] (Office)
-        [exec] (Toggl Desktop) {/usr/bin/toggl-desktop}
 		[exec] (Adobe Reader 9) {acroread}
 		[exec] (LibreOffice Impress) {libreoffice}
-		[exec] (PostgreSQL Database) {xterm -e psql template1}
 		[exec] (Wunderlist) {wunderlist}
 	[end]
-	[submenu] (System)
-        [exec] (1Password) {wine ~/.wine/drive_c/Program\ Files\ \(x86\)/1Password/1Password.exe}
-        [exec] (KeePass) {keepass}
-		[exec] (Terminal) {terminal}
+	[submenu] (Other)
+		[exec] (CMake) {cmake-gui}
+		[exec] (Everpad) {everpad}
+		[exec] (FontForge) {fontforge}
+		[exec] (QT V4L2 test Utility) {qv4l2}
+		[exec] (Virtual Network Editor) {vmware-netcfg}
+		[exec] (VMware Player) {vmplayer}
+	[end]
+	[submenu] (Shells)
+		[exec] (Aterm) {aterm}
+		[exec] (GIT) {xterm -e git}
 		[exec] (Oracle VM VirtualBox) {VirtualBox}
+		[exec] (ROX) {rox}
+		[exec] (Terminal) {Terminal}
+		[exec] (UXTerm) {uxterm}
+		[exec] (VMWare) {vmware}
+		[exec] (Xterm) {xterm}
+	[end]
+	[submenu] (System)
 		[submenu] (Settings)
-            [exec] (AMD Catalyst Control Center [Administrative]) {amdxdg-su -c amdcccle}
-            [exec] (Notifications) {xfce4-notifyd-config}
+			[submenu] (GNOME)
+				[exec] (Adobe Flash Player) {flash-player-properties}
+				[exec] (AMD Catalyst Control Center) {amdcccle}
+				[exec] (AMD Catalyst Control Center [Administrative]) {amdxdg-su -c amdcccle}
+			[end]
+			[submenu] (Xfce)
+				[exec] (Notifications) {xfce4-notifyd-config}
+			[end]
 			[exec] (Manage Printing) {xdg-open http://localhost:631/}
 			[exec] (Preferred Applications) {exo-preferred-applications}
 			[exec] (Print Settings) {system-config-printer}
 		[end]
+		[exec] (Avahi Zeroconf Browser) {avahi-discover}
+		[exec] (dconf Editor) {dconf-editor}
 	[end]
 	[submenu] (Utilities)
 		[exec] (7-Zip FM) {7zFM}
+		[exec] (About Xfce) {xfce4-about}
+		[exec] (Byobu Terminal) {xterm -e byobu-launcher}
 		[exec] (File Manager) {exo-open --launch FileManager}
 		[exec] (HP Device Manager) {hp-toolbox}
-		[exec] (Info) {xterm -e info}
+		[exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+		[exec] (UberWriter) {uberwriter}
 	[end]
 	[separator]
 	[submenu] (FluxBox)
