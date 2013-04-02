@@ -22,6 +22,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "vim-pandoc"]
-	path = vim-pandoc
-	url = git@github.com:vim-pandoc/vim-pandoc.git
+[submodule "vim/bundle/vim-pandoc"]
+	path = vim/bundle/vim-pandoc
+    url = https://github.com/vim-pandoc/vim-pandoc.git
