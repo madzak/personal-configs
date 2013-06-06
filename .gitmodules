@@ -25,3 +25,9 @@
 [submodule "vim/bundle/vim-pandoc"]
 	path = vim/bundle/vim-pandoc
     url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "vim/bundle/vim-soy"]
+	path = vim/bundle/vim-soy
+	url = https://github.com/duganchen/vim-soy.git
+[submodule "vim/bundle/handlebars"]
+	path = vim/bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
