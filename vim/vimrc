@@ -43,8 +43,6 @@ if has("gui_running")
     set guioptions-=m
     set guioptions-=T
 
-    set guifont=Anonymous\ Pro\ 14
-
     set cursorline
 else
     set t_Co=256
