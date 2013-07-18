@@ -1,0 +1,1 @@
+/home/zzajac/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/instant-markdown.vim
