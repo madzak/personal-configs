@@ -1,35 +1,30 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 set ruler
-
+set autoread
+set scrolloff=3
 set backspace=indent,eol,start
-
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-
 set wildmode=list:longest,full
-
 set number
-
 set autowrite
-
 set updatecount=10
-
 set autoindent
 set smartindent
-
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-
 set autochdir
-
 set pastetoggle=<F2>
 
 let g:NERDTreeDirArrows=0
+let NERDTreeShowHidden=1
+let g:syntastic_javascript_checkers = ['jshint']
+let g:gitgutter_enabled = 0
 
 call pathogen#infect()
 
@@ -57,8 +52,16 @@ au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 let twitvim_enable_python = 1
 let twitvim_browser_cmd = '/usr/bin/chromium-browser'
 
-nmap <slient> <BS> :nohlsearch<CR>
+let mapleader = ','
+nmap <silent> <BS> :nohlsearch<CR>
+nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>g :GitGutterToggle<CR>
+map <leader>l :Align
 
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
@@ -93,8 +96,10 @@ if &diff
     noremap <S-space> [cz.]
 endif
 
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS shiftwidth=2 tabstop=2
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags 
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
