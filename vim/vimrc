@@ -21,7 +21,7 @@ set shiftwidth=4
 set autochdir
 
 let g:NERDTreeDirArrows=0
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 let g:syntastic_javascript_checkers = ['jshint']
 let g:gitgutter_enabled = 0
 
