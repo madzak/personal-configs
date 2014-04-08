@@ -8,12 +8,13 @@ servers = (
     autoconnect = "yes";
   },
   {
-    address = "localhost";
-    chatnet = "chat";
+    address = "irc.twitch.tv";
+    chatnet = "twitch";
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+    password = "oauth:ewbnour73jqchxhix3u5bfhyiiwico2";
   }
 );
 
@@ -22,15 +23,14 @@ chatnets = {
     type = "IRC";
     nick = "madzak";
   };
-  chat = { 
+  twitch = { 
     type = "IRC";
-    nick = "zak";
+    nick = "jagurscape";
   };
 };
 
 channels = (
-  { name = "#disorderlyzen"; chatnet = "freenode"; autojoin = "yes"; }
-  { name = "#djangoseattle"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#thadrius"; chatnet = "twitch"; autojoin = "yes"; }
 );
 
 aliases = {
