@@ -105,3 +105,21 @@ autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS shiftwidth=2 tabstop=2
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags 
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" Find Nearest Make File
+fun! SetMkfile()
+  let filemk = "Makefile"
+  let pathmk = "./"
+  let depth = 1
+  while depth < 4
+    if filereadable(pathmk . filemk)
+      return pathmk
+    endif
+    let depth += 1
+    let pathmk = "../" . pathmk
+  endwhile
+  return "."
+endf
+
+command! -nargs=* Make | let $mkpath = SetMkfile() | make <args> -C $mkpath | cwindow 10
+map mb :Make build<enter> 
