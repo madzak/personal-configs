@@ -110,8 +110,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 fun! SetMkfile()
   let filemk = "Makefile"
   let pathmk = "./"
-  let depth = 1
-  while depth < 4
+  let depth = 1 
+  while depth < 5 
     if filereadable(pathmk . filemk)
       return pathmk
     endif
@@ -121,5 +121,5 @@ fun! SetMkfile()
   return "."
 endf
 
-command! -nargs=* Make | let $mkpath = SetMkfile() | make <args> -C $mkpath | cwindow 10
+command! -nargs=* Make | let $mkpath = SetMkfile() | make! <args> -C $mkpath | cwindow 20 
 map mb :Make build<enter> 
